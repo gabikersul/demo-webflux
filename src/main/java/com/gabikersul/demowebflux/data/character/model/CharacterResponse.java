@@ -2,6 +2,8 @@ package com.gabikersul.demowebflux.data.character.model;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 
+import java.util.List;
+
 @JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY) //qual a visibilidade p/ ver os valores dos campos
 public class CharacterResponse {
 
@@ -11,5 +13,6 @@ public class CharacterResponse {
     private String species;
     private String gender;
     private String image;
+    private List<String> episode;
 
 }
